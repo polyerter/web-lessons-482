@@ -16,4 +16,12 @@ function hello() {
   // console.log('Hello Word!', ++i);
 }
 
-// hello();
+function prev() {
+  let counter = document.getElementById('counter');
+  counter.innerText = --i;
+}
+
+function next() {
+  let counter = document.getElementById('counter');
+  counter.innerText = ++i;
+}

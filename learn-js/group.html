@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        let members = [
+            'Ellen S. Fiecke', 'Joshua N. Johnston', 'Jan J. Bacon', 'David D. Harris',
+            'Patricia R. Kellogg', 'Stephan T. Quigley', 'Robert C. Denmark', 'William M. Everett',
+            'Laura D. Yates', 'Eunice J. Clausen', 'Frank K. Chisholm', 'Lori R. Hampton',
+            'Paul H. Gay', 'Lucy A. Clifford', 'Kenneth P. Barfield', 'Alfred K. Suarez'
+        ];
+        let group1 = [];
+        let group2 = [];
+        
+        function add_to_group() {
+            let indx = getRandomInt(members.length - 1);
+            group1.push(members[indx]);
+            members.splice(indx, 1);
+
+            console.log(members);
+        }
+
+        add_to_group();
+        add_to_group();
+        add_to_group();
+
+        console.log(group1, group2);
+
+        // alert('Hello Word!');
+
+    </script>
+    
+</body>
+</html>
